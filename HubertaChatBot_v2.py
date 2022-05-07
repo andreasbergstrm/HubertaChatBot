@@ -4,6 +4,7 @@ Created on Sat May  7 09:59:10 2022
 
 @author: Andreas
 """
+!pip install transformers
 import tkinter
 from PIL import ImageTk
 from transformers import pipeline, Conversation
