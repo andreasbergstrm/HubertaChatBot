@@ -4,6 +4,16 @@ Created on Sat May  7 09:59:10 2022
 
 @author: Andreas
 """
+import sys
+import subprocess
+
+# install required packages with pip-install
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'Pillow'])
+subprocess.check_call([sys.executable, '-m', 'pip', 'install', 
+'transformers'])
+
+# import required packages
 import tkinter
 from PIL import ImageTk
 from transformers import pipeline, Conversation
